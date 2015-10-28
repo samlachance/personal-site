@@ -4,14 +4,20 @@
 $white: #FEFEFE;
 $black: #000;
 $gray: #787878;
-$dark-gray: #4D4D3D;
+$dark-gray: #272822;
 $light-gray: #B8B8B8;
 
 // Colors
 $primary: #5B2971;
-$secondary: ;
+$secondary: #7DCE82;
 $accent-1: #9974AA;
-$accent-2: ;
+$accent-2: #00A8E8;
+
+// Icon Colors
+$ruby: #a33c36;
+$html: ;
+$css: ;
+
 
 // Typefaces
 $heading: 'Lobster', cursive;
@@ -19,19 +25,53 @@ $standard: 'Roboto', sans-serif;
 
 body {
 
-  h1{
-    font-family: $heading;
-    text-align: center;
-    color: $white;
-    font-size: 8em;
+  div.page-cover {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/drops.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+  div.page-cover:hover {
+    background-image: none;
+    
   }
+
+  div.central-container {
+    display: block;
+    background-color: rgba(0,0,0,0);
+    height: calc(100vh - 60px);
+    width: 50%;
+    margin: 0 25%;
+    float: left;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+    h1 { 
+      font-family: $heading;
+      text-align: center;
+      color: $primary;
+      margin: 0;
+      font-size: 8em;
+    }
+  }
+
+  div.central-container:hover {
+    background-color: rgba(0,0,0,0.5)
+  }
+
   div.design-container{
     position: fixed;
     width: 50%;
     height: 100vh;
     top: 0px;
     left: 0px;
-    z-index: -2;
+    z-index: -3;
     display: flex;
     flex-direction: column;
     
@@ -42,25 +82,36 @@ body {
       display: flex;
       flex-wrap: wrap;
 
-      div.primary-swatch {
+      h2 {
+        color: rgba(0,0,0,0.2);
+        font-size: 4em;
+      }
+      
+      div.swatch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div.primary{
         background-color: $primary;
         height: 25vh;
         width: 100%;
       }
 
-      div.secondary-swatch {
-        background-color: $accent-1;
+      div.secondary {
+        background-color: $secondary;
         height: 12.5vh;
         width: 100%;
       }
 
-      div.accent-1-swatch {
-        background-color: $primary;
+      div.accent-1 {
+        background-color: $accent-1;
         height: 12.5vh;
         width: 50%;
       }
-      div.accent-2-swatch {
-        background-color: $accent-1;
+      div.accent-2 {
+        background-color: $accent-2;
         height: 12.5vh;
         width: 50%;
       }
@@ -72,7 +123,7 @@ body {
       height: 25vh;
       
       p {
-        margin: 0;
+        margin: 0 0 0 20px;
       }
       div.heading-typeface {
         width: 100%;
@@ -87,8 +138,53 @@ body {
         font-size: 5em;
         white-space: nowrap;
         height: 12.5vh;
-
       }
+    }
+    div.utility-icons-container {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      background-color: $white;
+
+      ul {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        list-style: none;
+
+        li {
+          width: 25%;
+          font-size: 6em;
+          text-align: center;
+
+          i.fa-diamond {
+            color: #a33c36;
+          }
+
+          i.fa-git {
+            color: #f05134;
+          }
+
+          i.fa-css3 {
+            color: #0c73b8;
+          }
+
+          i.fa-html5 {
+            color: #e54d26;
+          }
+          i.fa-mobile {
+            color: #99cc33;
+          }
+
+          i.fa-coffee {
+            color: #452e17;
+          }
+        }
+      } 
     }
   }
 
@@ -98,12 +194,38 @@ body {
     height: 100vh;
     top: 0px;
     right: 0px;
-    z-index: -1;
+    z-index: -2;
     display: flex;
     flex-direction: column;
     background-color: $dark-gray;
     border-left: 2px solid $primary;
+
+    pre {
+      white-space: wrap;
+      color: $white;
+      
+      code {
+        color: $white;
+        white-space: wrap;
+      }
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
