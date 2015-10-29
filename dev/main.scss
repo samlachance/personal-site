@@ -8,10 +8,10 @@ $dark-gray: #272822;
 $light-gray: #B8B8B8;
 
 // Colors
-$primary: #5B2971;
-$secondary: #7DCE82;
-$accent-1: #9974AA;
-$accent-2: #00A8E8;
+$primary: #422B72;
+$secondary: #266D98;
+$accent-1: #3CB29A;
+$accent-2: #C4F080;
 
 // Icon Colors
 $ruby: #a33c36;
@@ -26,30 +26,33 @@ $standard: 'Roboto', sans-serif;
 body {
 
   div.page-cover {
+    background-color: $white;
+    transition: background-color 2s ease-in-out;
     width: 100%;
     height: 100vh;
-    background-image: url(../img/drops.jpg);
-    background-position: center;
-    background-size: cover;
-    }
+  }
 
   div.page-cover:hover {
-    background-image: none;
-    
+    background-color: rgba(0,0,0,0);
+    transition: background-color 1s ease-in-out;    
+  }
+
+  div.right {
+    margin: 0 0 0 50%;
   }
 
   div.central-container {
     display: block;
     background-color: rgba(0,0,0,0);
     height: calc(100vh - 60px);
-    width: 50%;
+    width: calc(50% - 60px);
     margin: 0 25%;
     float: left;
     color: $white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 30px;
     
     h1 { 
@@ -58,11 +61,33 @@ body {
       color: $primary;
       margin: 0;
       font-size: 8em;
-    }
-  }
 
-  div.central-container:hover {
-    background-color: rgba(0,0,0,0.5)
+      background-color: rgba(255,255,255,0.7);
+      padding: 30px;
+      border-radius: 15px;
+      border: 4px solid $primary;
+      width: 100%;
+    }
+
+    ul {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      list-style: none;
+      background-color: rgba(255,255,255,0.7);
+      border: 4px solid $secondary;
+      border-radius: 15px;
+
+
+      li {
+        font-size: 4em;
+        
+        a {
+          color: $secondary;
+        }
+      }
+    }
   }
 
   div.design-container{
@@ -83,8 +108,9 @@ body {
       flex-wrap: wrap;
 
       h2 {
-        color: rgba(0,0,0,0.2);
+        color: rgba(255,255,255,0.3);
         font-size: 4em;
+        font-weight: 700;
       }
       
       div.swatch {
@@ -125,19 +151,23 @@ body {
       p {
         margin: 0 0 0 20px;
       }
-      div.heading-typeface {
+
+      div.typeface {
         width: 100%;
-        font-family: $heading;
         font-size: 5em;
         white-space: nowrap;
         height: 12.5vh;
+        display: flex;
+        align-items: center;
       }
 
-      div.standard-typeface {
-        width: 100%;
-        font-size: 5em;
-        white-space: nowrap;
-        height: 12.5vh;
+      div.heading {
+        font-family: $heading;
+      }
+
+      div.standard {
+        background-color: $gray;
+        color: $white;
       }
     }
     div.utility-icons-container {
@@ -160,6 +190,10 @@ body {
           width: 25%;
           font-size: 6em;
           text-align: center;
+          
+          i.fa-linux {
+            color: $dark-gray;
+          }
 
           i.fa-diamond {
             color: #a33c36;
@@ -170,18 +204,22 @@ body {
           }
 
           i.fa-css3 {
-            color: #0c73b8;
+            color: $secondary;
           }
 
           i.fa-html5 {
             color: #e54d26;
           }
           i.fa-mobile {
-            color: #99cc33;
+            color: #a4c639;
           }
 
           i.fa-coffee {
             color: #452e17;
+          }
+
+          i.fa-thumbs-up {
+            color: $accent-1;
           }
         }
       } 
@@ -190,7 +228,7 @@ body {
 
   div.development-container{
     position: fixed;
-    width: 50%;
+    width: calc(50% - 40px);
     height: 100vh;
     top: 0px;
     right: 0px;
@@ -198,34 +236,18 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $dark-gray;
-    border-left: 2px solid $primary;
+    border-left: 4px solid $primary;
+    padding: 20px;
 
     pre {
-      white-space: wrap;
-      color: $white;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      color: $primary;
+      margin: 0;
       
       code {
-        color: $white;
-        white-space: wrap;
+        color: $secondary;
       }
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
