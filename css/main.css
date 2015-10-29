@@ -20,9 +20,6 @@ body div.page-cover:hover {
   background-color: transparent;
   transition: background-color 2s ease-in-out; }
 
-body div.right {
-  margin: 0 0 0 50%; }
-
 body div.central-container {
   display: block;
   background-color: rgba(255, 255, 255, 0.7);
@@ -46,29 +43,28 @@ body div.central-container {
   padding: 30px; }
   body div.central-container h1 {
     font-family: "Lobster", cursive;
-    text-align: center;
     color: #422B72;
-    margin: 0;
     font-size: 8em;
+    text-align: center;
+    margin: 0;
     padding: 30px;
+    width: 90%;
     border-radius: 15px;
-    border: 4px solid #422B72;
-    width: 90%; }
+    border: 4px solid #422B72; }
   body div.central-container h2 {
+    font-family: "Raleway", sans-serif;
+    color: #272822;
     font-size: 2.5em;
     font-weight: 100;
+    text-align: center;
+    margin: 0;
     opacity: 0;
     -webkit-animation: fadeIn 2s ease-in;
             animation: fadeIn 2s ease-in;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-    color: #272822;
-    font-family: "Raleway", sans-serif;
-    border-radius: 15px;
-    text-align: center;
-    max-width: 100%; }
+            animation-delay: 3s; }
     body div.central-container h2 span.ice-ice-baby {
       color: #266D98; }
   body div.central-container ul {
