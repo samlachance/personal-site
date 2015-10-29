@@ -13,28 +13,30 @@ $secondary: #266D98;
 $accent-1: #3CB29A;
 $accent-2: #C4F080;
 
-// Icon Colors
-$ruby: #a33c36;
-$html: ;
-$css: ;
-
-
 // Typefaces
 $heading: 'Lobster', cursive;
 $standard: 'Roboto', sans-serif;
+$action: 'Raleway', sans-serif;
 
+// Animations
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+// Styles
 body {
 
   div.page-cover {
     background-color: $white;
-    transition: background-color 2s ease-in-out;
+    transition: background-color 1s ease-in-out;
     width: 100%;
     height: 100vh;
   }
 
   div.page-cover:hover {
     background-color: rgba(0,0,0,0);
-    transition: background-color 1s ease-in-out;    
+    transition: background-color 2s ease-in-out;    
   }
 
   div.right {
@@ -43,16 +45,16 @@ body {
 
   div.central-container {
     display: block;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(255,255,255,0.7);
     height: calc(100vh - 60px);
-    width: calc(50% - 60px);
-    margin: 0 25%;
+    width: 940px;
+    margin: 0 calc((100% - 940px) / 2);
     float: left;
     color: $white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 30px;
     
     h1 { 
@@ -62,12 +64,33 @@ body {
       margin: 0;
       font-size: 8em;
 
-      background-color: rgba(255,255,255,0.7);
+      // background-color: rgba(255,255,255,0.7);
       padding: 30px;
       border-radius: 15px;
       border: 4px solid $primary;
-      width: 100%;
+      width: 90%;
     }
+
+    h2 {
+      font-size: 2.5em;
+      font-weight: 100;
+      opacity: 0;
+      animation: fadeIn 2s ease-in;
+      animation-fill-mode: forwards;
+      animation-delay: 3s;
+      color: $dark-gray;
+      font-family: $action;
+      // background-color: rgba(255,255,255,0.7);
+      
+      border-radius: 15px;
+      text-align: center;
+      max-width: 100%;
+
+      span.ice-ice-baby {
+        color: $secondary;
+      }
+    }
+
 
     ul {
       padding: 20px 0;
@@ -75,8 +98,7 @@ body {
       justify-content: space-around;
       width: 80%;
       list-style: none;
-      background-color: rgba(255,255,255,0.7);
-      border: 4px solid $secondary;
+      // background-color: rgba(255,255,255,0.7);
       border-radius: 15px;
 
 
@@ -84,7 +106,11 @@ body {
         font-size: 4em;
         
         a {
-          color: $secondary;
+          color: $primary;
+        }
+
+        a:hover {
+          color: $accent-1;
         }
       }
     }
@@ -145,7 +171,8 @@ body {
 
     div.typeface-container {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       height: 25vh;
       
       p {
@@ -153,7 +180,7 @@ body {
       }
 
       div.typeface {
-        width: 100%;
+        width: 50%;
         font-size: 5em;
         white-space: nowrap;
         height: 12.5vh;
@@ -161,35 +188,49 @@ body {
         align-items: center;
       }
 
-      div.heading {
-        font-family: $heading;
+      div.main {
+        width: 100%;
+        background-color: $dark-gray;
+        color: $white;
       }
 
-      div.standard {
+      div.secondary {
+        font-family: $heading;
         background-color: $gray;
         color: $white;
       }
+
+      div.tertiary {
+        font-family: $action;
+
+        p {
+          margin-left: 10px;
+        }
+      }
     }
     div.utility-icons-container {
-      width: 100%;
+      width: 50%;
+      height: 25vh;
       position: fixed;
       bottom: 0;
       left: 0;
-      z-index: 0;
       background-color: $white;
 
       ul {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 0;
         list-style: none;
 
+
         li {
           width: 25%;
-          font-size: 6em;
+          height: 12.5vh;
+          font-size: auto;
           text-align: center;
+          font-size: 9vh;
           
           i.fa-linux {
             color: $dark-gray;
@@ -228,7 +269,7 @@ body {
 
   div.development-container{
     position: fixed;
-    width: calc(50% - 40px);
+    width: calc(50% - 44px);
     height: 100vh;
     top: 0px;
     right: 0px;
