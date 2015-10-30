@@ -5,7 +5,7 @@ $white: #FEFEFE;
 $black: #000;
 $gray: #787878;
 $dark-gray: #272822;
-$light-gray: #B8B8B8;
+$light-gray: #D8D8D8;
 
 // Colors
 $primary: #422B72;
@@ -56,6 +56,7 @@ body {
     padding: 30px;
     
     h1 { 
+      height: 160px;
       font-family: $heading;
       color: $primary;
       font-size: 8em;
@@ -68,6 +69,7 @@ body {
     }
 
     h2 {
+      height: 47px;
       font-family: $action;
       color: $dark-gray;
       font-size: 2.5em;
@@ -86,15 +88,18 @@ body {
 
 
     ul {
-      padding: 20px 0;
+      height: 74px;
       display: flex;
       justify-content: space-around;
       width: 80%;
       list-style: none;
       border-radius: 15px;
+      margin: 0 0 20px 0;
+      padding: 0;
 
       li {
         font-size: 4em;
+        margin: 0;
         
         a {
           color: $primary;
@@ -109,11 +114,11 @@ body {
 
   div.design-container{
     position: fixed;
-    width: 50%;
+    width: 35%;
     height: 100vh;
     top: 0px;
     left: 0px;
-    z-index: -3;
+    z-index: -4;
     display: flex;
     flex-direction: column;
     
@@ -152,11 +157,19 @@ body {
         background-color: $accent-1;
         height: 12.5vh;
         width: 50%;
+
+        h2 {
+          font-size: 2.8em;
+        }
       }
       div.accent-2 {
         background-color: $accent-2;
         height: 12.5vh;
         width: 50%;
+
+        h2 {
+          font-size: 2.8em;
+        }
       }
     }
 
@@ -200,7 +213,7 @@ body {
       }
     }
     div.utility-icons-container {
-      width: 50%;
+      width: 35%;
       height: 25vh;
       position: fixed;
       bottom: 0;
@@ -258,9 +271,67 @@ body {
     }
   }
 
+  div.wireframe-container {
+    width: 65%;
+    height: calc(100vh - 50px);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: $white;
+    z-index: -3;
+    padding: 25px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+    div.frame {
+      border-top: 1px solid $black;
+      border-bottom: 1px solid $black;
+      width: calc(46.5% - 4px);
+      background-color: $light-gray;
+    }
+
+    div.logo {
+      height: 237px;
+    }
+  
+    div.action {
+      height: 47px;
+    }
+
+    div.contact {
+      height: 70px;
+      margin: 0 0 26px 0;
+    }
+
+    div.frame-description {
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: calc(46.153% - 4px);
+      align-items: center;
+
+      div.description-child {
+        text-align: center;
+
+        color: $dark-gray;
+        h2 {
+
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  } 
+    
   div.development-container{
     position: fixed;
-    width: calc(50% - 44px);
+    width: calc(35% - 44px);
     height: 100vh;
     top: 0px;
     right: 0px;
