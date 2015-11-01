@@ -16,8 +16,10 @@
       height: auto;
       padding: 20px; }
     div.central-container h2 {
-      font-size: 5vw;
-      height: auto; }
+      font-size: 2em;
+      height: auto;
+      animation: none;
+      opacity: 1; }
 
   div.design-container {
     display: block;
@@ -59,7 +61,6 @@
       div.design-container div.typeface-container div.tertiary p {
         margin: 0 0 0 20px; }
     div.design-container div.utility-icons-container {
-      display: none;
       position: relative;
       width: 100%; }
 
@@ -67,12 +68,11 @@
     display: none; }
 
   div.development-container {
-    display: none;
+    display: block;
     position: relative;
     width: calc(100% - 40px);
     height: 65vh; }
     div.development-container pre {
-      display: none;
       height: 65vh; }
 
   div.mobile-contact {
