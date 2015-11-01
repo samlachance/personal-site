@@ -59,6 +59,7 @@
       div.design-container div.typeface-container div.tertiary p {
         margin: 0 0 0 20px; }
     div.design-container div.utility-icons-container {
+      display: none;
       position: relative;
       width: 100%; }
 
