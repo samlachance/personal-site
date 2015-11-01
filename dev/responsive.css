@@ -1,0 +1,81 @@
+@media screen and (max-width: 1000px) {
+  div.page-cover {
+    display: none; }
+
+  div.central-container {
+    width: calc(100% - 40px);
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    justify-content: space-around;
+    float: none; }
+    div.central-container h1 {
+      font-size: 12vw;
+      width: auto;
+      padding: 0;
+      height: auto;
+      padding: 20px; }
+    div.central-container h2 {
+      font-size: 2em;
+      height: auto; }
+
+  div.design-container {
+    display: block;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 90vh; }
+    div.design-container div.color-swatch-container {
+      width: 100%;
+      height: 25vh;
+      background-color: red;
+      display: flex;
+      flex-wrap: wrap; }
+      div.design-container div.color-swatch-container div.swatch {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        div.design-container div.color-swatch-container div.swatch h2 {
+          color: rgba(255, 255, 255, 0.3);
+          font-size: 7vw;
+          font-weight: 700; }
+      div.design-container div.color-swatch-container div.primary {
+        height: 12.5vh;
+        width: 50%; }
+      div.design-container div.color-swatch-container div.secondary {
+        height: 12.5vh;
+        width: 50%; }
+      div.design-container div.color-swatch-container div.accent-1 {
+        height: 12.5vh;
+        width: 50%; }
+      div.design-container div.color-swatch-container div.accent-2 {
+        height: 12.5vh;
+        width: 50%; }
+    div.design-container div.typeface-container {
+      height: 37.5vh; }
+      div.design-container div.typeface-container div.typeface {
+        font-size: 4vw;
+        white-space: wrap;
+        width: 100%; }
+      div.design-container div.typeface-container div.tertiary p {
+        margin: 0 0 0 20px; }
+    div.design-container div.utility-icons-container {
+      position: relative;
+      width: 100%; }
+
+  div.wireframe-container {
+    display: none; }
+
+  div.development-container {
+    display: block;
+    position: relative;
+    z-index: 0;
+    width: calc(100% - 40px);
+    height: 65vh; }
+    div.development-container pre {
+      height: 65vh; }
+
+  div.mobile-contact {
+    display: flex; } }
+
+/*# sourceMappingURL=responsive.css.map */

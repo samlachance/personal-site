@@ -66,22 +66,23 @@ div.central-container {
     animation-delay: 3s; }
     div.central-container h2 span.ice-ice-baby {
       color: #266D98; }
-  div.central-container ul {
-    height: 74px;
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    list-style: none;
-    border-radius: 15px;
-    margin: 0 0 20px 0;
-    padding: 0; }
-    div.central-container ul li {
-      font-size: 4em;
-      margin: 0; }
-      div.central-container ul li a {
-        color: #422B72; }
-      div.central-container ul li a:hover {
-        color: #3CB29A; }
+
+ul.contact {
+  height: 74px;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  list-style: none;
+  border-radius: 15px;
+  margin: 0 0 20px 0;
+  padding: 0; }
+  ul.contact li {
+    font-size: 4em;
+    margin: 0; }
+    ul.contact li a {
+      color: #422B72; }
+    ul.contact li a:hover {
+      color: #3CB29A; }
 
 div.design-container {
   position: fixed;
@@ -101,7 +102,8 @@ div.design-container {
     div.design-container div.color-swatch-container h2 {
       color: rgba(255, 255, 255, 0.3);
       font-size: 4em;
-      font-weight: 700; }
+      font-weight: 700;
+      margin: 0; }
     div.design-container div.color-swatch-container div.swatch {
       display: flex;
       align-items: center;
@@ -275,5 +277,16 @@ div.development-container {
     overflow-x: hidden;
     overflow-y: hidden;
     margin: 0; }
+
+div.mobile-contact {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #272822;
+  color: #3CB29A;
+  height: 40vh; }
+  div.mobile-contact a i {
+    color: #3CB29A; }
 
 /*# sourceMappingURL=main.css.map */
