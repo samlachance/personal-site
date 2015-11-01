@@ -265,6 +265,12 @@ div.development-container {
   background-color: #272822;
   color: #FEFEFE;
   padding: 20px; }
+  div.development-container span.element {
+    color: #266D98; }
+  div.development-container span.attribute {
+    color: #3CB29A; }
+  div.development-container span.attribute-value {
+    color: #C4F080; }
   div.development-container pre {
     overflow-x: hidden;
     overflow-y: hidden;

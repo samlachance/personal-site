@@ -300,7 +300,6 @@ div.wireframe-container {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
     background: repeating-linear-gradient(-55deg, $gray, $gray 10px, $light-gray 10px,
     $light-gray 20px);
 
@@ -377,6 +376,18 @@ div.development-container{
   background-color: $dark-gray;
   color: $white;
   padding: 20px;
+
+  span.element {
+    color: $secondary;
+  }
+
+  span.attribute {
+    color: $accent-1;
+  }
+
+  span.attribute-value {
+    color: $accent-2;
+  }
 
   pre {
     overflow-x: hidden;
