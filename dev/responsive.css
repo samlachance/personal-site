@@ -25,10 +25,10 @@
     display: block;
     position: relative;
     width: 100%;
-    height: 450px; }
+    height: auto; }
     div.design-container div.color-swatch-container {
       width: 100%;
-      height: 125px;
+      height: auto;
       background-color: red;
       display: flex;
       flex-wrap: wrap; }
@@ -52,7 +52,10 @@
         margin: 0 0 0 20px; }
     div.design-container div.utility-icons-container {
       position: relative;
-      width: 100%; }
+      width: 100%;
+      height: auto; }
+      div.design-container div.utility-icons-container ul li {
+        font-size: 10vw; }
 
   div.wireframe-container {
     display: none; }

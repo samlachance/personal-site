@@ -160,20 +160,24 @@ div.design-container {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: #FEFEFE; }
+    background-color: #FEFEFE;
+    display: flex;
+    align-items: center; }
     div.design-container div.utility-icons-container ul {
       width: 100%;
+      height: auto;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       padding: 0;
+      margin: 0;
       list-style: none; }
       div.design-container div.utility-icons-container ul li {
         width: 25%;
-        height: 12.5vh;
+        height: auto;
         font-size: auto;
         text-align: center;
-        font-size: 9vh; }
+        font-size: 5vw; }
         div.design-container div.utility-icons-container ul li i.fa-linux {
           color: #272822; }
         div.design-container div.utility-icons-container ul li i.fa-diamond {
