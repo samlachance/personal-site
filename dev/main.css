@@ -3,30 +3,31 @@
     opacity: 0; }
   to {
     opacity: 1; } }
-
 @-moz-keyframes fadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-
 @keyframes fadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+ul {
+  list-style: none;
+  padding: 0; }
 
-body div.page-cover {
+div.page-cover {
   background-color: #FEFEFE;
   transition: background-color 1s ease-in-out;
   width: 100%;
   height: 100vh; }
 
-body div.page-cover:hover {
+div.page-cover:hover {
   background-color: transparent;
   transition: background-color 2s ease-in-out; }
 
-body div.central-container {
+div.central-container {
   display: block;
   background-color: rgba(255, 255, 255, 0.7);
   height: calc(100vh - 60px);
@@ -40,7 +41,7 @@ body div.central-container {
   align-items: center;
   justify-content: space-between;
   padding: 30px; }
-  body div.central-container h1 {
+  div.central-container h1 {
     height: 160px;
     font-family: "Lobster", cursive;
     color: #422B72;
@@ -51,7 +52,7 @@ body div.central-container {
     width: 90%;
     border-radius: 15px;
     border: 4px solid #422B72; }
-  body div.central-container h2 {
+  div.central-container h2 {
     height: 47px;
     font-family: "Raleway", sans-serif;
     color: #272822;
@@ -63,9 +64,9 @@ body div.central-container {
     animation: fadeIn 2s ease-in;
     animation-fill-mode: forwards;
     animation-delay: 3s; }
-    body div.central-container h2 span.ice-ice-baby {
+    div.central-container h2 span.ice-ice-baby {
       color: #266D98; }
-  body div.central-container ul {
+  div.central-container ul {
     height: 74px;
     display: flex;
     justify-content: space-around;
@@ -74,15 +75,15 @@ body div.central-container {
     border-radius: 15px;
     margin: 0 0 20px 0;
     padding: 0; }
-    body div.central-container ul li {
+    div.central-container ul li {
       font-size: 4em;
       margin: 0; }
-      body div.central-container ul li a {
+      div.central-container ul li a {
         color: #422B72; }
-      body div.central-container ul li a:hover {
+      div.central-container ul li a:hover {
         color: #3CB29A; }
 
-body div.design-container {
+div.design-container {
   position: fixed;
   width: 35%;
   height: 100vh;
@@ -91,104 +92,104 @@ body div.design-container {
   z-index: -4;
   display: flex;
   flex-direction: column; }
-  body div.design-container div.color-swatch-container {
+  div.design-container div.color-swatch-container {
     width: 100%;
     height: 50vh;
     background-color: red;
     display: flex;
     flex-wrap: wrap; }
-    body div.design-container div.color-swatch-container h2 {
+    div.design-container div.color-swatch-container h2 {
       color: rgba(255, 255, 255, 0.3);
       font-size: 4em;
       font-weight: 700; }
-    body div.design-container div.color-swatch-container div.swatch {
+    div.design-container div.color-swatch-container div.swatch {
       display: flex;
       align-items: center;
       justify-content: center; }
-    body div.design-container div.color-swatch-container div.primary {
+    div.design-container div.color-swatch-container div.primary {
       background-color: #422B72;
       height: 25vh;
       width: 100%; }
-    body div.design-container div.color-swatch-container div.secondary {
+    div.design-container div.color-swatch-container div.secondary {
       background-color: #266D98;
       height: 12.5vh;
       width: 100%; }
-    body div.design-container div.color-swatch-container div.accent-1 {
+    div.design-container div.color-swatch-container div.accent-1 {
       background-color: #3CB29A;
       height: 12.5vh;
       width: 50%; }
-      body div.design-container div.color-swatch-container div.accent-1 h2 {
+      div.design-container div.color-swatch-container div.accent-1 h2 {
         font-size: 2.8em; }
-    body div.design-container div.color-swatch-container div.accent-2 {
+    div.design-container div.color-swatch-container div.accent-2 {
       background-color: #C4F080;
       height: 12.5vh;
       width: 50%; }
-      body div.design-container div.color-swatch-container div.accent-2 h2 {
+      div.design-container div.color-swatch-container div.accent-2 h2 {
         font-size: 2.8em; }
-  body div.design-container div.typeface-container {
+  div.design-container div.typeface-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: 25vh; }
-    body div.design-container div.typeface-container p {
+    div.design-container div.typeface-container p {
       margin: 0 0 0 20px; }
-    body div.design-container div.typeface-container div.typeface {
+    div.design-container div.typeface-container div.typeface {
       width: 50%;
       font-size: 5em;
       white-space: nowrap;
       height: 12.5vh;
       display: flex;
       align-items: center; }
-    body div.design-container div.typeface-container div.main {
+    div.design-container div.typeface-container div.main {
       width: 100%;
       background-color: #272822;
       color: #FEFEFE; }
-    body div.design-container div.typeface-container div.secondary {
+    div.design-container div.typeface-container div.secondary {
       font-family: "Lobster", cursive;
       background-color: #787878;
       color: #FEFEFE; }
-    body div.design-container div.typeface-container div.tertiary {
+    div.design-container div.typeface-container div.tertiary {
       font-family: "Raleway", sans-serif; }
-      body div.design-container div.typeface-container div.tertiary p {
+      div.design-container div.typeface-container div.tertiary p {
         margin-left: 10px; }
-  body div.design-container div.utility-icons-container {
+  div.design-container div.utility-icons-container {
     width: 35%;
     height: 25vh;
     position: fixed;
     bottom: 0;
     left: 0;
     background-color: #FEFEFE; }
-    body div.design-container div.utility-icons-container ul {
+    div.design-container div.utility-icons-container ul {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       padding: 0;
       list-style: none; }
-      body div.design-container div.utility-icons-container ul li {
+      div.design-container div.utility-icons-container ul li {
         width: 25%;
         height: 12.5vh;
         font-size: auto;
         text-align: center;
         font-size: 9vh; }
-        body div.design-container div.utility-icons-container ul li i.fa-linux {
+        div.design-container div.utility-icons-container ul li i.fa-linux {
           color: #272822; }
-        body div.design-container div.utility-icons-container ul li i.fa-diamond {
+        div.design-container div.utility-icons-container ul li i.fa-diamond {
           color: #a33c36; }
-        body div.design-container div.utility-icons-container ul li i.fa-git {
+        div.design-container div.utility-icons-container ul li i.fa-git {
           color: #f05134; }
-        body div.design-container div.utility-icons-container ul li i.fa-css3 {
+        div.design-container div.utility-icons-container ul li i.fa-css3 {
           color: #266D98; }
-        body div.design-container div.utility-icons-container ul li i.fa-html5 {
+        div.design-container div.utility-icons-container ul li i.fa-html5 {
           color: #e54d26; }
-        body div.design-container div.utility-icons-container ul li i.fa-mobile {
+        div.design-container div.utility-icons-container ul li i.fa-mobile {
           color: #a4c639; }
-        body div.design-container div.utility-icons-container ul li i.fa-coffee {
+        div.design-container div.utility-icons-container ul li i.fa-coffee {
           color: #452e17; }
-        body div.design-container div.utility-icons-container ul li i.fa-thumbs-up {
+        div.design-container div.utility-icons-container ul li i.fa-thumbs-up {
           color: #3CB29A; }
 
-body div.wireframe-container {
+div.wireframe-container {
   width: 65%;
   height: calc(100vh - 50px);
   position: fixed;
@@ -200,34 +201,61 @@ body div.wireframe-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  body div.wireframe-container div.frame {
+  div.wireframe-container p {
+    margin: 0; }
+  div.wireframe-container div.frame {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    width: calc(46.5% - 4px);
-    background-color: #D8D8D8; }
-  body div.wireframe-container div.logo {
-    height: 237px; }
-  body div.wireframe-container div.action {
-    height: 47px; }
-  body div.wireframe-container div.contact {
-    height: 70px;
-    margin: 0 0 26px 0; }
-  body div.wireframe-container div.frame-description {
-    height: 15vh;
+    width: 46.153%;
+    background-color: #D8D8D8;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: calc(46.153% - 4px);
-    align-items: center; }
-    body div.wireframe-container div.frame-description div.description-child {
-      text-align: center;
-      color: #272822; }
-      body div.wireframe-container div.frame-description div.description-child p {
-        margin: 0; }
+    justify-content: space-around;
+    align-items: center;
+    background: repeating-linear-gradient(-55deg, #787878, #787878 10px, #D8D8D8 10px, #D8D8D8 20px); }
+    div.wireframe-container div.frame h3 {
+      font-size: 2vw;
+      margin: 0; }
+  div.wireframe-container div.logo {
+    height: 237px;
+    justify-content: space-between; }
+    div.wireframe-container div.logo h3 {
+      font-size: 3em; }
+    div.wireframe-container div.logo ul {
+      font-size: 1.2em; }
+  div.wireframe-container div.action {
+    height: 47px; }
+  div.wireframe-container div.contact {
+    height: 70px;
+    margin: 0 0 26px 0; }
+  div.wireframe-container div.frame-description {
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: calc(46.153% - 50px);
+    padding: 10px;
+    margin-left: 15px;
+    font-size: 0.9em;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000; }
+    div.wireframe-container div.frame-description ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0; }
+      div.wireframe-container div.frame-description ul li {
+        width: 50%;
+        display: inline-block;
+        margin-top: 5px; }
+    div.wireframe-container div.frame-description div.description-child {
+      text-align: left;
+      color: #272822;
+      width: calc(100% - 10px); }
 
-body div.development-container {
+div.development-container {
   position: fixed;
-  width: calc(35% - 44px);
+  width: calc(35% - 40px);
   height: 100vh;
   top: 0px;
   right: 0px;
@@ -235,12 +263,11 @@ body div.development-container {
   display: flex;
   flex-direction: column;
   background-color: #272822;
-  border-left: 4px solid #422B72;
+  color: #FEFEFE;
   padding: 20px; }
-  body div.development-container pre {
+  div.development-container pre {
     overflow-x: hidden;
     overflow-y: hidden;
-    color: #422B72;
     margin: 0; }
-    body div.development-container pre code {
-      color: #266D98; }
+
+/*# sourceMappingURL=main.css.map */
