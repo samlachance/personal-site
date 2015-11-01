@@ -67,11 +67,12 @@
     display: none; }
 
   div.development-container {
-    display: block;
+    display: none;
     position: relative;
     width: calc(100% - 40px);
     height: 65vh; }
     div.development-container pre {
+      display: none;
       height: 65vh; }
 
   div.mobile-contact {
