@@ -226,7 +226,8 @@ div.wireframe-container {
     height: 237px;
     justify-content: space-between; }
     div.wireframe-container div.logo h3 {
-      font-size: 3em; }
+      font-size: 3em;
+      color: #FEFEFE; }
     div.wireframe-container div.logo ul {
       font-size: 1.2em; }
   div.wireframe-container div.action {
