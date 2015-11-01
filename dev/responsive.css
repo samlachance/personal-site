@@ -4,9 +4,9 @@
 
   div.central-container {
     width: calc(100% - 40px);
-    margin: 0;
+    margin: 0 0 50px 0;
     padding: 20px;
-    height: 500px;
+    height: 600px;
     justify-content: space-around;
     float: none; }
     div.central-container h1 {
@@ -36,7 +36,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 65px;
+        height: 100px;
         width: 50%; }
         div.design-container div.color-swatch-container div.swatch h2 {
           color: rgba(255, 255, 255, 0.3);
@@ -53,7 +53,8 @@
     div.design-container div.utility-icons-container {
       position: relative;
       width: 100%;
-      height: auto; }
+      height: auto;
+      margin-bottom: 25px; }
       div.design-container div.utility-icons-container ul li {
         font-size: 10vw; }
 
