@@ -218,16 +218,16 @@ div.wireframe-container {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: repeating-linear-gradient(-55deg, #787878, #787878 10px, #D8D8D8 10px, #D8D8D8 20px); }
+    background: repeating-linear-gradient(-55deg, #787878, #787878 10px, #272822 10px, #272822 20px); }
     div.wireframe-container div.frame h3 {
+      color: #FEFEFE;
       font-size: 2vw;
       margin: 0; }
   div.wireframe-container div.logo {
     height: 237px;
     justify-content: space-between; }
     div.wireframe-container div.logo h3 {
-      font-size: 3em;
-      color: #FEFEFE; }
+      font-size: 3em; }
     div.wireframe-container div.logo ul {
       font-size: 1.2em; }
   div.wireframe-container div.action {
